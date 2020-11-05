@@ -41,14 +41,14 @@ function runEnter() {
     // console.log input value
     console.log(inputValue);
     // Filter Data with datetime equal to input value
-    var filteredData = tableData.filter(sight => sight.datetime === inputValue);
+    var filteredData = tableData.filter(sighting => sighting.datetime === inputValue);
     // console.log filter values
     console.log(tableData);
 
     filteredData.forEach(function(selections) {
 
     console.log(selections);
-    // Append one table row `tr` for each UFO Sighting object
+    // Append one table row `tr` for each sight object
     var row = tbody.append("tr");
     // Use `Object.entries` to console.log each UFO Sighting value
     Object.entries(selections).forEach(function([key, value]) {
